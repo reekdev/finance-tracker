@@ -51,4 +51,4 @@ jobs:
           rsync -avz -e \
             "ssh -o StrictHostKeyChecking=no" \
             ./dist/apps/frontend/browser/* \
-            ${{ secrets.VPS_DEPLOYER_USERNAME }}@${{ secrets.VPS_HOST_IP }}:/var/www/finance-tracker-frontend/
+            ${{ secrets.VPS_DEPLOYER_USERNAME }}@${{ secrets.VPS_HOST_IP }}:/var/www/fundcue/
